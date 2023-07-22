@@ -1,0 +1,125 @@
+:root {
+    --inter: 'Inter';
+    --montserrat: 'Montserrat';
+    --light-text: #E4E5EA;
+}
+
+nav {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.nav-logo {
+    width: 150px;
+    height: 100%;
+}
+
+.logo-img {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.logo-img img {
+    object-fit: contain;
+}
+
+.logo-img img:last-child {
+    margin-left: 10px;
+}
+
+.logo-inner {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--light-text);
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.nav-link {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 8px 0 !important;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: var(--light-text);
+    font-size: 16px;
+    font-family: var(--inter);
+    margin-left: 30px;
+    margin-top: 10px;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+.nav-contact {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+.nav-contact p {
+    width: 50%;
+    color: var(--light-text);
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--inter);
+    text-align: right;
+
+}
+
+.contact-icon {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+}
+
+.contact-icon i {
+    color: var(--light-text);
+    font-size: 20px;
+}
+
+@media (max-width: 320px) {
+    .container {
+        padding: 0 !important;
+    }
+
+    nav {
+        width: 100%;
+        padding: 20px 0;
+        background-color: #0E1014;
+        height: 55px;
+    }
+
+    .nav-logo {
+        display: none;
+    }
+
+    .nav-link {
+        display: flex !important;
+        justify-content: space-evenly;
+        padding: 0 !important;
+        height: 100%;
+        width: 100%;
+    }
+    .nav-link a{
+        font-size: 12px;
+        margin: 0;
+    }
+    .nav-link a:last-child{
+        display: none;
+    }
+
+    .nav-contact {
+        display: none;
+    }
+}

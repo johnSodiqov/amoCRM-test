@@ -1,0 +1,142 @@
+:root {
+    --inter: 'Inter';
+    --montserrat: 'Montserrat';
+    --light-text: #E4E5EA;
+    --dark-grey: #656566;
+}
+
+footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+
+}
+
+.link-header h3 {
+    font-size: 14px;
+    color: var(--dark-grey);
+    font-weight: 700;
+    font-family: var(--inter);
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.link-item a {
+    text-decoration: none;
+    color: var(--light-text);
+    font-size: 16px;
+    font-family: var(--inter);
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.footer-link:nth-child(2) .link-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.footer-link:nth-child(3) .link-item {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-icon {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+
+.contact-icon i {
+    color: var(--light-text);
+    font-size: 20px;
+}
+
+.footer-inner {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.footer-inner p {
+    width: 300px;
+    text-align: end;
+    color: var(--light-text);
+    font-size: 12px;
+    font-family: var(--montserrat);
+    margin-bottom: 5px;
+}
+
+.footer-inner a {
+    display: flex;
+    justify-content: flex-end;
+    width: 300px;
+    color: var(--light-text);
+    font-size: 12px;
+    font-family: var(--montserrat);
+}
+
+@media (max-width: 320px) {
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 120px 1fr 1fr;
+        width: 100%;
+        padding: 40px 15px 10px 15px;
+    }
+
+    .footer {
+        background-color: #0E1014;
+    }
+
+    .footer-link:nth-child(1) {
+        width: 90%;
+    }
+
+    .footer-link:nth-child(3) {
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+        margin: 20px 0;
+    }
+
+    .footer-link:nth-child(3) .link-item {
+        justify-content: start;
+    }
+
+    .footer-link:nth-child(3) .link-item a {
+        text-align: start !important;
+    }
+
+    .contact-icon {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 0;
+    }
+
+    .footer-inner {
+        padding: 10px 10px;
+        justify-content: start;
+        margin-bottom: 20px;
+    }
+
+    .footer-inner p {
+        text-align: start;
+    }
+
+    .footer-inner a {
+        display: flex;
+        justify-content: flex-start;
+        
+    }
+}

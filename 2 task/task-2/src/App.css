@@ -1,0 +1,115 @@
+.App {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0E1014;
+  position: relative;
+  z-index: -100;
+  overflow-x: hidden;
+}
+
+.background {
+  width: 1300px;
+  position: absolute;
+  z-index: -1;
+}
+
+.decor {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.red-light {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background-color: #961A1A;
+  border-radius: 50%;
+  filter: blur(196px);
+  top: 200px;
+  left: -100px;
+}
+
+.purple-light {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: #833AB4;
+  border-radius: 50%;
+  filter: blur(160px);
+  top: -100px;
+  left: 650px;
+}
+
+.purple-ball {
+  position: absolute;
+  left: 850px;
+  top: -5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgb(236, 208, 255);
+  background: radial-gradient(82.30% 82.30% at 27.25% 26.50%, rgba(236, 208, 255, 0.64) 0%, rgba(161, 93, 207, 0.24) 59.67%, rgba(118, 49, 164, 0.21) 78.59%, rgba(86, 24, 128, 0.23) 100%);
+  filter: drop-shadow(3px 6px 27px rgba(177, 118, 217, 0.25)) blur(3px);
+  backdrop-filter: blur(2px);
+}
+
+.red-ball1 {
+  position: absolute;
+  top: 60px;
+  left: 500px;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: radial-gradient(82.30% 82.30% at 27.25% 26.50%, rgba(255, 208, 208, 0.54) 0%, rgba(212, 93, 93, 0.26) 59.67%, rgba(167, 49, 49, 0.25) 78.59%, rgba(130, 25, 25, 0.25) 100%);
+  filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25));
+  backdrop-filter: blur(2px);
+}
+
+.red-ball2 {
+  position: absolute;
+  top: 450px;
+  left: 760px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: radial-gradient(82.30% 82.30% at 27.25% 26.50%, rgba(255, 208, 208, 0.54) 0%, rgba(212, 93, 93, 0.26) 59.67%, rgba(167, 49, 49, 0.25) 78.59%, rgba(130, 25, 25, 0.25) 100%);
+  filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25));
+  backdrop-filter: blur(2px);
+}
+
+@media (max-width: 320px) {
+  .background {
+    width: 320px;
+  }
+
+  .red-light {
+    top: 400px;
+    bottom: -20px;
+    width: 200px;
+    height: 200px;
+    background-color: #961A1A;
+
+  }
+
+  .purple-light {
+    left: 200px;
+    top: 100px;
+
+  }
+
+  .purple-ball {
+    top: 300px;
+    left: 280px;
+    filter: blur(10px);
+  }
+
+  .red-ball1 {
+    top: 450px;
+    left: 20px;
+    filter: blur(10px);
+  }
+  .red-ball2{
+    display: none;
+  }
+}

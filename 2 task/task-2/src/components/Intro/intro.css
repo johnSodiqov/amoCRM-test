@@ -1,0 +1,167 @@
+:root {
+    --inter: 'Inter';
+    --montserrat: 'Montserrat';
+    --light-text: #E4E5EA;
+}
+
+.intro {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 80px 0;
+}
+
+.intro-header {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.intro-header h1 {
+    width: 90%;
+    font-size: 48px;
+    color: var(--light-text);
+    font-family: var(--inter);
+}
+
+.intro-header p {
+    font-size: 18px;
+    color: var(--light-text);
+    font-family: var(--montserrat);
+    margin-top: 30px;
+}
+
+.intro-content {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.intro-content h4 {
+    width: 60%;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--light-text);
+    font-family: var(--inter);
+    text-align: right;
+}
+
+.gifts {
+    width: 55%;
+    display: grid;
+    columns: 2;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    margin: 20px 0;
+}
+
+.gift-item {
+    text-align: right;
+}
+
+.gift-item h3 {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--inter);
+    color: var(--light-text);
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.gift-item p {
+    font-size: 16px;
+    color: var(--light-text);
+    font-family: var(--montserrat);
+    text-align: right;
+    font-weight: 400;
+}
+
+.intro-button {
+    background-color: #4077F3;
+    color: var(--light-text);
+    font-family: var(--inter);
+    font-size: 16px;
+    padding: 20px 40px;
+    margin-left: 20%;
+    border: none;
+}
+
+span:first-child {
+    text-transform: uppercase;
+}
+
+span:last-child {
+    background: linear-gradient(90deg, #FCB045 33%, #FF3F78 66%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+@media (max-width: 320px) {
+    .intro {
+        margin: 30px 0;
+    }
+
+    .intro-header {
+        width: 100%;
+        padding: 0 15px;
+        margin-bottom: 45px;
+
+    }
+
+    .intro-header h1 {
+        font-size: 36px;
+        font-weight: 400;
+    }
+
+    .intro-header p {
+        margin: 10px 0;
+    }
+
+    .intro-content {
+        width: 100%;
+        justify-content: start;
+        padding: 0 15px;
+    }
+
+    .intro-content h4 {
+        width: 100%;
+        text-align: start;
+    }
+
+    .gifts {
+        width: 100%;
+    }
+
+    .gift-item h3 {
+        text-align: start;
+        margin-left: 10px;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+
+    .gift-item h3::before {
+        content: "";
+        height: 1px;
+        width: 10px;
+        background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
+        display: inline-flex;
+        align-items: start;
+        justify-content: center;
+        margin-right:  8px;
+
+    }
+
+    .gift-item p {
+        display: none;
+    }
+
+    .intro-button{
+        display: none;
+    }
+
+}
